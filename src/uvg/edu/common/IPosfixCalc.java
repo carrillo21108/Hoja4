@@ -15,5 +15,5 @@ public interface IPosfixCalc {
 	 * Postcondicion:
 	 * @return int: el resultado de la expresion
 	 */
-	int Evaluate(String expresion);
+	int Evaluate(String expresion, String typeStack);
 }

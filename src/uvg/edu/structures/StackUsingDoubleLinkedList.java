@@ -11,34 +11,35 @@ import uvg.edu.common.IList;
  */
 public class StackUsingDoubleLinkedList<T> extends Stack<T> {
 
+	private DoubleLinkedList<T> listaInterna;
+	
+	public StackUsingDoubleLinkedList() {
+		listaInterna = new DoubleLinkedList<T>();
+	}
+	
 	@Override
 	public int count() {
-		// TODO Auto-generated method stub
-		return 0;
+		return listaInterna.Count();
 	}
 
 	@Override
 	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
+		return listaInterna.IsEmpty();
 	}
 
 	@Override
 	public void push(T value) {
-		// TODO Auto-generated method stub
-		
+		listaInterna.InsertAtStart(value);
 	}
 
 	@Override
 	public T pull() {
-		// TODO Auto-generated method stub
-		return null;
+		return listaInterna.DeleteAtStart();
 	}
 
 	@Override
 	public T peek() {
-		// TODO Auto-generated method stub
-		return null;
+		return listaInterna.Get(0);
 	}
 	
 

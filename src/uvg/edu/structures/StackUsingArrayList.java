@@ -3,6 +3,8 @@
  */
 package uvg.edu.structures;
 
+import java.util.ArrayList;
+
 import uvg.edu.common.IStack;
 
 /**
@@ -11,34 +13,34 @@ import uvg.edu.common.IStack;
  */
 public class StackUsingArrayList<T> extends Stack<T> {
 
+	private ArrayList<T> miListaInterna;
+	
+	public StackUsingArrayList() {
+		miListaInterna = new ArrayList<T>(); 
+	}
+	
 	@Override
 	public int count() {
-		// TODO Auto-generated method stub
-		return 0;
+		return miListaInterna.size();
 	}
 
 	@Override
 	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
+		return miListaInterna.isEmpty();
 	}
 
 	@Override
 	public void push(T value) {
-		// TODO Auto-generated method stub
-		
+		miListaInterna.add(0, value);
 	}
 
 	@Override
 	public T pull() {
-		// TODO Auto-generated method stub
-		return null;
+		return miListaInterna.remove(0);
 	}
 
 	@Override
-	public T peek() {
-		// TODO Auto-generated method stub
-		return null;
+	public T peek() {		
+		return miListaInterna.get(0);
 	}
-
 }
