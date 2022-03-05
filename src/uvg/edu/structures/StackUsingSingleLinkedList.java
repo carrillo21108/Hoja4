@@ -11,34 +11,36 @@ import uvg.edu.common.IStack;
  */
 public class StackUsingSingleLinkedList<T> extends Stack<T> {
 
+	private SingleLinkedList<T> listaInterna;
+	
+	public StackUsingSingleLinkedList()
+	{
+		listaInterna = new SingleLinkedList<T>();
+	}
+	
 	@Override
 	public int count() {
-		// TODO Auto-generated method stub
-		return 0;
+		return listaInterna.Count();
 	}
 
 	@Override
 	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
+		return listaInterna.IsEmpty();
 	}
 
 	@Override
 	public void push(T value) {
-		// TODO Auto-generated method stub
-		
+		listaInterna.InsertAtStart(value);
 	}
 
 	@Override
 	public T pull() {
-		// TODO Auto-generated method stub
-		return null;
+		return listaInterna.Delete(0);
 	}
 
 	@Override
 	public T peek() {
-		// TODO Auto-generated method stub
-		return null;
+		return listaInterna.Get(0);
 	}
 
 }

@@ -3,6 +3,8 @@
  */
 package uvg.edu.structures;
 
+import java.util.Vector;
+
 import uvg.edu.common.IStack;
 
 /**
@@ -11,34 +13,35 @@ import uvg.edu.common.IStack;
  */
 public class StackUsingVector<T> extends Stack<T> {
 
+	private Vector<T> miListaInterna;
+	
+	public StackUsingVector() {
+		miListaInterna = new Vector<T>(); 
+	}
+	
 	@Override
 	public int count() {
-		// TODO Auto-generated method stub
-		return 0;
+		return miListaInterna.size();
 	}
 
 	@Override
 	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
+		return miListaInterna.isEmpty();
 	}
 
 	@Override
 	public void push(T value) {
-		// TODO Auto-generated method stub
-		
+		miListaInterna.add(0, value);
 	}
 
 	@Override
 	public T pull() {
-		// TODO Auto-generated method stub
-		return null;
+		return miListaInterna.remove(0);
 	}
 
 	@Override
-	public T peek() {
-		// TODO Auto-generated method stub
-		return null;
+	public T peek() {		
+		return miListaInterna.get(0);
 	}
 
 }
