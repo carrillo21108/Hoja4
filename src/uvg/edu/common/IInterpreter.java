@@ -15,5 +15,5 @@ public interface IInterpreter {
 	 * Postcondicion:
 	 * @return String: " 1 2 + "
 	 */
-	String Evaluate(String expresion);
+	String Evaluate(String expresion, String typeStack);
 }

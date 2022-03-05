@@ -9,7 +9,7 @@ import uvg.edu.common.IStack;
  * @author Brian Carrillo
  *
  */
-public class StackUsingLinkedList<T> extends Stack<T> {
+public class StackUsingSingleLinkedList<T> extends Stack<T> {
 
 	@Override
 	public int count() {
