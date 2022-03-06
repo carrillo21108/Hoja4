@@ -17,7 +17,7 @@ public class PosfixCalc implements IPosfixCalc {
 	/**
 	 * Constructor sin parametros privado
 	 */
-	private PosfixCalc() {}
+	public PosfixCalc() {}
 	
 	//Patron singleton
 	public synchronized static PosfixCalc getInstance() {
