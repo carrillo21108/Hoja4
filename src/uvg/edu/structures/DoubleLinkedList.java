@@ -15,12 +15,25 @@ public class DoubleLinkedList<T> extends List<T> {
 	private DoubleNode<T> end;
 	private int count;
 	
+	/**
+     *Constructor
+     * 
+     */
 	public DoubleLinkedList() {
 		start = null;
 		end = null;
 		count = 0;
 	}
 	
+	/**
+     * Metodo InsertAtStart: sirve insertar un nodo al inicio
+     * 
+     * @see DoubleNode#setNext(DoubleNode)
+     * @see DoubleNode#setPrevious(DoubleNode)
+     * @see DoubleNode#setValue(Object)
+     * @param value: (T)
+     * 
+     */
 	@Override
 	public void InsertAtStart(T value) {
 		DoubleNode<T> newNode = new DoubleNode<T>(value);
@@ -43,6 +56,15 @@ public class DoubleLinkedList<T> extends List<T> {
 		count++;
 	}
 
+	/**
+     * Metodo InsertAtEnd: sirve insertar un nodo al final
+     * 
+     * @see DoubleNode#setNext(DoubleNode)
+     * @see DoubleNode#setPrevious(DoubleNode)
+     * @see DoubleNode#setValue(Object)
+     * @param value: (T)
+     * 
+     */
 	@Override
 	public void InsertAtEnd(T value) {
 		
@@ -67,6 +89,18 @@ public class DoubleLinkedList<T> extends List<T> {
 		
 	}
 
+	/**
+     * Metodo Insert: sirve insertar un nodo en la posición indicada
+     * 
+     * @see DoubleNode#setNext(DoubleNode)
+     * @see DoubleNode#setPrevious(DoubleNode)
+     * @see DoubleNode#getNext()
+     * @see DoubleLinkedList#InsertAtEnd(Object)
+     * @see DoubleLinkedList#InsertAtStart(Object)
+     * @param value: (T)
+     * @param index: (int)
+     * 
+     */
 	@Override
 	public void Insert(T value, int index) {
 		
@@ -107,12 +141,27 @@ public class DoubleLinkedList<T> extends List<T> {
 		
 	}
 
+	/**
+     * Metodo Delete
+     * 
+     * @param index: (int)
+     * 
+     */
 	@Override
 	public T Delete(int index) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
+	/**
+     * Metodo DeleteAtStart: sirve eliminar un nodo en la posición inicial
+     * 
+     * @see DoubleNode#setNext(DoubleNode)
+     * @see DoubleNode#setPrevious(DoubleNode)
+     * @see DoubleNode#getNext()
+     * @see DoubleNode#getValue()
+     * 
+     */
 	@Override
 	public T DeleteAtStart() {
 		if (!IsEmpty()) {
@@ -139,12 +188,24 @@ public class DoubleLinkedList<T> extends List<T> {
 		
 	}
 
+	/**
+     * Metodo DeleteAtEnd
+     * 
+     */
 	@Override
 	public T DeleteAtEnd() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
+	/**
+     * Metodo Get: sirve obtener el valor de un nodo específico
+     * 
+     * @see DoubleNode#getNext()
+     * @see DoubleNode#getValue()
+     * @param index: (int)
+     * 
+     */
 	@Override
 	public T Get(int index) {
 	    if (!IsEmpty())
@@ -186,11 +247,19 @@ public class DoubleLinkedList<T> extends List<T> {
 
 	}
 
+	/**
+     * Metodo IsEmpty
+     * 
+     */
 	@Override
 	public boolean IsEmpty() {
 		return count == 0;
 	}
 
+	/**
+     * Metodo Count
+     * 
+     */
 	@Override
 	public int Count() {
 		return count;

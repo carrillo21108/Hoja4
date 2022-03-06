@@ -12,6 +12,13 @@ public class DoubleNode<T> {
 	private DoubleNode<T> next;
 	private DoubleNode<T> previous;
 	
+	
+	/**
+     *Constructor
+     * 
+     * @param value: (T)
+     * 
+     */
 	public DoubleNode(T value) {
 		this.setValue(value);
 	}

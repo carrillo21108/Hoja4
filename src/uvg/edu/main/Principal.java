@@ -18,7 +18,22 @@ public class Principal {
 
 	/**
 	 * @param args
-	 */
+	 * 
+     * Metodo main
+     *
+     * @param args: (String[])
+     * @see System.out#println()
+     * @see Reader#leerTxt()
+     * @see PosfixCalc#Evaluate()
+     * @see Scanner#nextInt(int)
+     * @see Scanner#nextLine()
+     * @see Scanner#close()
+     * @see PosfixCalc#getInstance()
+     * @see PosfixCalc#Evaluate(String, String)
+     * @see Interpreter#getInstance()
+     * @see Interpreter#Evaluate(String, String)
+     * 
+     */
 	public static void main(String[] args) {
 		
 	        Scanner sc = new Scanner(System.in);

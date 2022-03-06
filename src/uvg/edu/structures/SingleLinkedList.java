@@ -15,6 +15,15 @@ public class SingleLinkedList<T> extends List<T> {
     private Node<T> start;
     private Node<T> end;
 
+    /**
+     * Metodo InsertAtStart: sirve insertar un nodo al inicio
+     * 
+     * @see Node#setNext(Node)
+     * @see Node#setPrevious(Node)
+     * @see Node#setValue(Object)
+     * @param value: (T)
+     * 
+     */
 	@Override
 	public void InsertAtStart(T value) {
 		Node<T> newNode = new Node<T>(value);
@@ -32,6 +41,15 @@ public class SingleLinkedList<T> extends List<T> {
         count++;
 	}
 
+	/**
+     * Metodo InsertAtEnd: sirve insertar un nodo al final
+     * 
+     * @see Node#setNext(Node)
+     * @see Node#setPrevious(Node)
+     * @see Node#setValue(Object)
+     * @param value: (T)
+     * 
+     */
 	@Override
 	public void InsertAtEnd(T value) {
 		Node<T> newNode = new Node<T>(value);
@@ -50,6 +68,18 @@ public class SingleLinkedList<T> extends List<T> {
 		
 	}
 
+	/**
+     * Metodo Insert: sirve insertar un nodo en la posición indicada
+     * 
+     * @see Node#setNext(Node)
+     * @see Node#setPrevious(Node)
+     * @see Node#getNext()
+     * @see Node#InsertAtEnd(Object)
+     * @see Node#InsertAtStart(Object)
+     * @param value: (T)
+     * @param index: (int)
+     * 
+     */
 	@Override
 	public void Insert(T value, int index){
 		
@@ -88,7 +118,16 @@ public class SingleLinkedList<T> extends List<T> {
             }
         }
 	}
-
+	
+	/**
+     * Metodo Delete
+     * 
+     * @param index: (int)
+     * @see Node#getNext()
+     * @see Node#getValue()
+     * @see Node#setNext(Node)
+     * 
+     */
 	@Override
 	public T Delete(int index) {
 		
@@ -125,6 +164,13 @@ public class SingleLinkedList<T> extends List<T> {
         }
 	}
 
+	/**
+     * Metodo DeleteAtStart: sirve eliminar un nodo en la posición inicial
+     * 
+     * @see Node#getNext()
+     * @see Node#getValue()
+     * 
+     */
 	@Override
 	public T DeleteAtStart() {
 		
@@ -139,6 +185,13 @@ public class SingleLinkedList<T> extends List<T> {
         return null;
 	}
 
+	/**
+     * Metodo DeleteAtEnd
+     * 
+     * @see Node#getNext()
+     * @see Node#getValue()
+     * 
+     */
 	@Override
 	public T DeleteAtEnd() {
 		if (!IsEmpty()) 
@@ -176,6 +229,14 @@ public class SingleLinkedList<T> extends List<T> {
         return null;
 	}
 
+	/**
+     * Metodo Get: sirve obtener el valor de un nodo específico
+     * 
+     * @see Node#getNext()
+     * @see Node#getValue()
+     * @param index: (int)
+     * 
+     */
 	@Override
 	public T Get(int index) {
 		
@@ -217,11 +278,19 @@ public class SingleLinkedList<T> extends List<T> {
         return null;
 	}
 
+	/**
+     * Metodo IsEmpty
+     * 
+     */
 	@Override
 	public boolean IsEmpty() {
 		return count == 0;
 	}
 
+	/**
+     * Metodo Count
+     * 
+     */
 	@Override
 	public int Count() {
 		// TODO Auto-generated method stub
