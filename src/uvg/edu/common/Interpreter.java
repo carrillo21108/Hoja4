@@ -9,6 +9,22 @@ import uvg.edu.structures.Stack;
  *
  */
 public class Interpreter implements IInterpreter {
+	
+	private static Interpreter instance;
+	
+	/**
+	 * Constructor sin parametros privado
+	 */
+	private Interpreter() {}
+	
+	//Patron singleton
+	public synchronized static Interpreter getInstance() {
+		if(instance==null) {
+			instance = new Interpreter();
+		}
+		
+		return instance;
+	}
 
 	@Override
 	public String Evaluate(String expresion, String typeStack) {
