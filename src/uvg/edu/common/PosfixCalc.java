@@ -12,11 +12,21 @@ import uvg.edu.structures.Stack;
 public class PosfixCalc implements IPosfixCalc {
 	//Stack del sistema
 	private Stack pila;
+	private static PosfixCalc instance;
 	
 	/**
-	 * Constructor sin parametros
+	 * Constructor sin parametros privado
 	 */
-	public PosfixCalc() {}
+	private PosfixCalc() {}
+	
+	//Patron singleton
+	public synchronized static PosfixCalc getInstance() {
+		if(instance==null) {
+			instance = new PosfixCalc();
+		}
+		
+		return instance;
+	}
 	
 	@Override
 	/**
