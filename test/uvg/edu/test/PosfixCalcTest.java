@@ -4,7 +4,7 @@ import uvg.edu.common.PosfixCalc;
 
 
 public class PosfixCalcTest extends TestCase{
-	private String expresion = "143*+";
+	private String expresion = "1 4 3*+";
 	private PosfixCalc calculadora;
 	
 	public void Incializar(){

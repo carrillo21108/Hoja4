@@ -1,15 +1,15 @@
 /**
- * 
+ * Clase List
+ * @author Brian Carrillo
+ * @version 1.0
+ *
+ * Clase abstracta de listas
  */
 package uvg.edu.structures;
 
 import uvg.edu.common.IList;
 
-/**
- * @author Brian Carrillo
- *
- */
-public class List<T> implements IList<T> {
+public abstract class List<T> implements IList<T> {
 
 	/**
      *InsertAtStart
@@ -18,10 +18,7 @@ public class List<T> implements IList<T> {
      * 
      */
 	@Override
-	public void InsertAtStart(T value) {
-		// TODO Auto-generated method stub
-		
-	}
+	public abstract void InsertAtStart(T value) ;
 
 	/**
      *InsertAtEnd
@@ -30,10 +27,7 @@ public class List<T> implements IList<T> {
      * 
      */
 	@Override
-	public void InsertAtEnd(T value) {
-		// TODO Auto-generated method stub
-		
-	}
+	public abstract void InsertAtEnd(T value);
 
 	/**
      *Insert
@@ -43,10 +37,7 @@ public class List<T> implements IList<T> {
      * 
      */
 	@Override
-	public void Insert(T value, int index) {
-		// TODO Auto-generated method stub
-		
-	}
+	public abstract void Insert(T value, int index) ;
 
 	/**
      *Delete
@@ -55,30 +46,21 @@ public class List<T> implements IList<T> {
      * 
      */
 	@Override
-	public T Delete(int index) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	public abstract T Delete(int index);
 
 	/**
      *DeleteAtStart
      * 
      */
 	@Override
-	public T DeleteAtStart() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	public abstract T DeleteAtStart();
 
 	/**
      *DeleteAtEnd
      * 
      */
 	@Override
-	public T DeleteAtEnd() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	public abstract T DeleteAtEnd();
 
 	/**
      *Get
@@ -87,29 +69,18 @@ public class List<T> implements IList<T> {
      * 
      */
 	@Override
-	public T Get(int index) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
+	public abstract T Get(int index);
 	/**
      *IsEmpty
      * 
      */
 	@Override
-	public boolean IsEmpty() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
+	public abstract boolean IsEmpty();
 	/**
      *Count
      * 
      */
 	@Override
-	public int Count() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+	public abstract int Count();
 
 }

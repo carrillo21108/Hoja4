@@ -1,14 +1,14 @@
 /**
- * 
+ * Clase StackUsingSingleLinkedList
+ * @author Brian Carrillo
+ * @version 1.0
+ *
+ * Stack con implementacion de SingleLinkedList
  */
 package uvg.edu.structures;
 
 import uvg.edu.common.IStack;
 
-/**
- * @author Brian Carrillo
- *
- */
 public class StackUsingSingleLinkedList<T> extends Stack<T> {
 
 	private SingleLinkedList<T> listaInterna;

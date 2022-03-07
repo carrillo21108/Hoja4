@@ -1,14 +1,16 @@
 /**
- * 
+ * Clase PostfixCalc
+ * @author Brian Carrillo
+ * @version 1.0
+ *
+ * En esta clase se evaluan las operaciones en notacion
+ * postfija. Implementa la interfaz IPosfixCalc.
  */
+
 package uvg.edu.common;
 
 import uvg.edu.structures.Stack;
 
-/**
- * @author Brian Carrillo
- *
- */
 public class PosfixCalc implements IPosfixCalc {
 	//Stack del sistema
 	private Stack pila;

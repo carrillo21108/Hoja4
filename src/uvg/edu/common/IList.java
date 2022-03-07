@@ -1,14 +1,17 @@
 /**
- * 
+ * Interfaz IList
+ * @author Brian Carrillo
+ *
+ * En esta interfaz se definen los metodos que implementa el las listas.
  */
 package uvg.edu.common;
 
 /**
- * @author MAAG
  *
  */
 public interface IList<T> {
-
+	
+	
     void InsertAtStart(T value);
 
     void InsertAtEnd(T value);

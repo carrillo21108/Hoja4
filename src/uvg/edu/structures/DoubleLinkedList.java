@@ -1,14 +1,15 @@
 /**
- * 
+ * Clase DoubleLinkedList
+ * @author Brian Carrillo
+ * @version 1.0
+ *
+ * Lista encadenada doble
  */
+
 package uvg.edu.structures;
 
 import uvg.edu.common.IList;
 
-/**
- * @author Brian Carrillo
- *
- */
 public class DoubleLinkedList<T> extends List<T> {
 
 	private DoubleNode<T> start;

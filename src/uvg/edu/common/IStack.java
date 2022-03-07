@@ -1,10 +1,12 @@
 /**
- * 
+ * Interfaz IStack
+ * @author Brian Carrillo
+ *
+ * En esta interfaz se definen los metodos que implementa el las stacks.
  */
 package uvg.edu.common;
 
 /**
- * @author MAAG
  *
  */
 public interface IStack<T> {

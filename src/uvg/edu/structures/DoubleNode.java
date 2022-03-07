@@ -1,12 +1,13 @@
 /**
- * 
+ * Clase DoubleNode
+ * @author Brian Carrillo
+ * @version 1.0
+ *
+ * Nodo de lista encadenada doble
  */
 package uvg.edu.structures;
 
-/**
- * @author Brian Carrillo
- *
- */
+
 public class DoubleNode<T> {
 	private T value;
 	private DoubleNode<T> next;
