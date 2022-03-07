@@ -1,12 +1,13 @@
 /**
- * 
+ * Clase Node
+ * @author Brian Carrillo
+ * @version 1.0
+ *
+ * Nodo de lista encadenada simple
  */
+
 package uvg.edu.structures;
 
-/**
- * @author Brian Carrillo
- *
- */
 public class Node<T> {
 	private T value;
 	private Node<T> next;

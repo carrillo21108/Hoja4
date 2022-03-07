@@ -1,5 +1,11 @@
+
 /**
- * 
+ * Clase Principal
+ * @author Carlos Lopez
+ * @version 1.0
+ *
+ * En esta clase se maneja el metodo main que permite la ejecucion del 
+ * programa. Desde el metodo main se ejecutan los metodos de la calculadora.
  */
 package uvg.edu.main;
 import uvg.edu.common.Interpreter;
@@ -9,11 +15,6 @@ import uvg.edu.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-
-/**
- * @author Brian Carrillo
- *
- */
 public class Principal {
 
 	/**
@@ -37,14 +38,21 @@ public class Principal {
 	public static void main(String[] args) {
 		
 	        Scanner sc = new Scanner(System.in);
+	        
+	        //Banderas de salida y errores
 	        boolean salida = false;
 	        boolean error = false;
+	        
+	        //Opcion de menu
 	        int opc = 0;
+	        
+	        //Uso del reader
 	        Reader reader = new Reader();
 	        ArrayList<String> filasLeidas = new ArrayList<String>();
 	        String ruta;
 	        String typeStack = "";
-
+	        
+	        //Ciclo del menu
 	        while(!salida){
 	        	
 	        	do{
@@ -71,8 +79,8 @@ public class Principal {
 
 	            switch (opc) {
 	                case 1:
-	                	
-	                	System.out.println("Ingrese la ruta en la que se encunetre el archivo.");
+	                	//Conversion de infija a postfija y operacion
+	                	System.out.println("Ingrese la ruta en la que se encuentra el archivo.");
 	                	ruta = sc.nextLine();
 	                	filasLeidas = reader.leerTxt(ruta);
 	                	
@@ -89,7 +97,8 @@ public class Principal {
 				                					+ "4. DoubleLinkedList\n");
 	                			opc = sc.nextInt();
 	                			error = false;
-
+	                			
+	                			//Definicion del tipo de pila a utilizar
 	                			switch (opc) {
 	                			case 1:
 	                				typeStack = "ArrayList";
@@ -117,9 +126,12 @@ public class Principal {
 	                	}while(error);
 
 	                	
+	                	//Operacion sobre cada linea del documento
 	                	if(filasLeidas != null) {        	
 	                    	for (String fila : filasLeidas) {
+	                    		//Conversion a postfijo
 	                    		String postFixExp = Interpreter.getInstance().Evaluate(fila.replace(" ",""), typeStack);
+	                    		//Operacion de la expresion
 	                    		int resultado = PosfixCalc.getInstance().Evaluate(postFixExp, typeStack);
 	                    		System.out.println("Infix: " + fila + " ,Posfix: " + postFixExp + " ,Resultado: " + resultado);
 	                    	}
@@ -127,6 +139,7 @@ public class Principal {
 	                	            
 		                break;
 	                case 2:
+	                	//Salida
 	                	salida = true;
 	                	System.out.println("Saliendo...");
 	                	break;

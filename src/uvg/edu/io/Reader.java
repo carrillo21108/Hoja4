@@ -1,6 +1,12 @@
 /**
- * 
+ * Clase Reader
+ * @author Jennifer Toxcon
+ * @version 1.0
+ *
+ * En esta clase se utilizan las clases File, FileReader y BufferedReader 
+ * para escanear el contenido del archivo de datos.
  */
+
 package uvg.edu.io;
 
 

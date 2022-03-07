@@ -1,5 +1,9 @@
 /**
- * 
+ * Clase StackUsingVector
+ * @author Brian Carrillo
+ * @version 1.0
+ *
+ * Stack con implementacion de Vector
  */
 package uvg.edu.structures;
 
@@ -7,10 +11,6 @@ import java.util.Vector;
 
 import uvg.edu.common.IStack;
 
-/**
- * @author Brian Carrillo
- *
- */
 public class StackUsingVector<T> extends Stack<T> {
 
 	private Vector<T> miListaInterna;

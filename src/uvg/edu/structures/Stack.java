@@ -1,14 +1,14 @@
 /**
- * 
+ * Clase Stack
+ * @author Brian Carrillo
+ * @version 1.0
+ *
+ * Clase abstracta de Stack
  */
 package uvg.edu.structures;
 
 import uvg.edu.common.IStack;
 
-/**
- * @author Brian Carrillo
- *
- */
 public abstract class Stack<T> implements IStack<T> {
 
 	@Override

@@ -1,12 +1,15 @@
 /**
- * 
+ * Clase SingleLinkedList
+ * @author Brian Carrillo
+ * @version 1.0
+ *
+ * Lista encadenada simple
  */
 package uvg.edu.structures;
 
 import uvg.edu.common.IList;
 
 /**
- * @author Brian Carrillo
  *
  */
 public class SingleLinkedList<T> extends List<T> {

@@ -1,5 +1,9 @@
 /**
- * 
+ * Clase StackUsingArrayList
+ * @author Brian Carrillo
+ * @version 1.0
+ *
+ * Stack con implementacion de ArrayList
  */
 package uvg.edu.structures;
 
@@ -7,10 +11,6 @@ import java.util.ArrayList;
 
 import uvg.edu.common.IStack;
 
-/**
- * @author Brian Carrillo
- *
- */
 public class StackUsingArrayList<T> extends Stack<T> {
 
 	private ArrayList<T> miListaInterna;

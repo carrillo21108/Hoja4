@@ -1,5 +1,9 @@
 /**
- * 
+ * Clase StackUsingDoubleLinkedList
+ * @author Brian Carrillo
+ * @version 1.0
+ *
+ * Stack con implementacion de DoubleLinkedList
  */
 package uvg.edu.structures;
 
@@ -7,10 +11,6 @@ import java.util.ArrayList;
 
 import uvg.edu.common.IList;
 
-/**
- * @author Brian Carrillo
- *
- */
 public class StackUsingDoubleLinkedList<T> extends Stack<T> {
 
 	private DoubleLinkedList<T> listaInterna;
